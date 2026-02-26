@@ -17,9 +17,45 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nithil | Software Engineer & Designer",
-  description: "Portfolio of Nithil, an engineering student specialized in Web Development, Robotics, and Embedded Systems (Arduino, ESP32).",
-  keywords: ["Nithil", "Software Engineer", "Frontend", "Robotics", "Arduino", "React", "Next.js", "Portfolio"],
+  title: "Nithil Suganthan | Software Engineer & Founder",
+  description: "Portfolio of Nithil Suganthan R, a B.Tech IT undergraduate specializing in full-stack web development, robotics, and embedded systems (Arduino, ESP32). Founder of Inventobots Academy.",
+  keywords: ["Nithil Suganthan R", "Software Engineer", "Full Stack Developer", "Robotics", "Arduino", "React", "Next.js", "Portfolio", "Inventobots Academy"],
+  authors: [{ name: "Nithil Suganthan R" }],
+  creator: "Nithil Suganthan R",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://nithilsuganthanrportfolio.vercel.app/",
+    title: "Nithil Suganthan | Software Engineer & Founder",
+    description: "Discover the projects, skills, and startup ventures of Nithil Suganthan R.",
+    siteName: "Nithil Portfolio",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Nithil Suganthan Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nithil Suganthan | Software Engineer & Founder",
+    description: "Discover the projects, skills, and startup ventures of Nithil Suganthan R.",
+    creator: "@NithilSuganthan",
+    images: ["/og-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({

@@ -1,106 +1,67 @@
 "use client";
 
 import SectionWrapper from "./SectionWrapper";
-import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { FadeIn, StaggerContainer, StaggerItem } from "./ui/Motion";
+import { Github, Linkedin, Mail, ArrowUpRight } from "lucide-react";
+import { contactData } from "@/data/portfolio";
 
 export default function Contact() {
+    const socialLinks = [
+        {
+            name: "GitHub",
+            url: contactData.github,
+            icon: <Github className="w-6 h-6" />,
+            color: "hover:bg-[#333] hover:border-[#333] hover:text-white"
+        },
+        {
+            name: "LinkedIn",
+            url: contactData.linkedin,
+            icon: <Linkedin className="w-6 h-6" />,
+            color: "hover:bg-[#0077b5] hover:border-[#0077b5] hover:text-white"
+        },
+        {
+            name: "Email",
+            url: `mailto:${contactData.email}`,
+            icon: <Mail className="w-6 h-6" />,
+            color: "hover:bg-primary hover:border-primary hover:text-primary-foreground"
+        }
+    ];
+
     return (
-        <SectionWrapper id="contact" className="bg-accent/20">
-            <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
-                    <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6"></div>
-                    <p className="text-muted-foreground text-lg">
-                        Currently looking for new opportunities. Whether you have a question or just want to say hi,
-                        my inbox is always open. I'll try my best to get back to you!
+        <SectionWrapper id="contact" className="pb-32">
+            <div className="max-w-4xl mx-auto text-center">
+
+                <FadeIn direction="up">
+                    <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-8 border border-primary/20">
+                        Let's Connect
+                    </div>
+
+                    <h2 className="text-4xl md:text-6xl font-black tracking-tighter mb-6">
+                        Get In Touch
+                    </h2>
+
+                    <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed mb-12">
+                        Whether you have a compelling project, a role that fits my engineering profile, or just want to discuss tech and innovation, my inbox is always open.
                     </p>
-                </div>
+                </FadeIn>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
-                    <motion.div
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5 }}
-                        className="flex flex-col gap-6 p-8 bg-card border border-border rounded-xl"
-                    >
-                        <h3 className="text-2xl font-bold mb-2">Contact Info</h3>
+                <StaggerContainer className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    {socialLinks.map((link) => (
+                        <StaggerItem key={link.name} className="w-full sm:w-auto">
+                            <a
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`group flex items-center justify-center md:justify-start gap-4 px-8 py-4 bg-card border border-border/50 rounded-2xl transition-all duration-300 shadow-sm hover:shadow-xl ${link.color}`}
+                            >
+                                {link.icon}
+                                <span className="font-bold tracking-wide">{link.name}</span>
+                                <ArrowUpRight className="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:-translate-y-1 group-hover:translate-x-1 transition-all" />
+                            </a>
+                        </StaggerItem>
+                    ))}
+                </StaggerContainer>
 
-                        <a
-                            href="mailto:@nithilsuganthan@gmail.com"
-                            className="flex items-center gap-4 text-muted-foreground hover:text-foreground transition-colors group"
-                        >
-                            <div className="p-3 bg-accent rounded-lg group-hover:bg-primary/20 transition-colors">
-                                <Mail className="w-6 h-6 text-primary" />
-                            </div>
-                            <div>
-                                <p className="text-sm font-medium text-foreground">Email</p>
-                                <p>contact@nithilsuganthan@gmail.com</p>
-                            </div>
-                        </a>
-
-                        <a
-                            href="https://linkedin.com/in/nithil"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-4 text-muted-foreground hover:text-foreground transition-colors group"
-                        >
-                            <div className="p-3 bg-accent rounded-lg group-hover:bg-primary/20 transition-colors">
-                                <Linkedin className="w-6 h-6 text-primary" />
-                            </div>
-                            <div>
-                                <p className="text-sm font-medium text-foreground">LinkedIn</p>
-                                <p>linkedin.com/in/nithil</p>
-                            </div>
-                        </a>
-
-                        <a
-                            href="https://github.com/Nithil"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="flex items-center gap-4 text-muted-foreground hover:text-foreground transition-colors group"
-                        >
-                            <div className="p-3 bg-accent rounded-lg group-hover:bg-primary/20 transition-colors">
-                                <Github className="w-6 h-6 text-primary" />
-                            </div>
-                            <div>
-                                <p className="text-sm font-medium text-foreground">GitHub</p>
-                                <p>github.com/NithilSuganthan</p>
-                            </div>
-                        </a>
-
-                        <div className="flex items-center gap-4 text-muted-foreground mt-2">
-                            <div className="p-3 bg-accent rounded-lg">
-                                <MapPin className="w-6 h-6 text-primary" />
-                            </div>
-                            <div>
-                                <p className="text-sm font-medium text-foreground">Location</p>
-                                <p>Open for Relocation / Remote</p>
-                            </div>
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5 }}
-                        className="flex flex-col justify-center h-full p-8"
-                    >
-                        <h3 className="text-2xl font-bold mb-6">Let's build something</h3>
-                        <p className="text-muted-foreground mb-8">
-                            I am interested in full-stack web development roles, robotics engineering, embedded systems orchestration, and hardware-software integration. If you think I would be a fast learner and a great fit for an engineering or developer role, I would love to connect!
-                        </p>
-
-                        <a
-                            href="mailto:contact@nithil.dev"
-                            className="inline-flex w-full sm:w-auto self-start items-center justify-center bg-primary text-primary-foreground px-8 py-4 rounded-lg font-medium hover:bg-primary/90 transition-colors shadow-lg shadow-primary/20"
-                        >
-                            Say Hello
-                        </a>
-                    </motion.div>
-                </div>
             </div>
         </SectionWrapper>
     );
