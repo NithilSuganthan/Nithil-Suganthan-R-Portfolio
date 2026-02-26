@@ -1,0 +1,52 @@
+[
+  {
+    "name": "address-on-map",
+    "desc": null,
+    "lang": "TypeScript"
+  },
+  {
+    "name": "rabbitmq-worker-queues-in-node-js",
+    "desc": null,
+    "lang": "JavaScript"
+  },
+  {
+    "name": "multi-docker",
+    "desc": null,
+    "lang": "JavaScript"
+  },
+  {
+    "name": "connected-dots-new-tab-extension",
+    "desc": null,
+    "lang": "JavaScript"
+  },
+  {
+    "name": "go-cards",
+    "desc": null,
+    "lang": "Go"
+  },
+  {
+    "name": "react-coding-challenges",
+    "desc": "A collection of React.js coding challenges with different difficulties.",
+    "lang": "SCSS"
+  },
+  {
+    "name": "http-exceptions-js",
+    "desc": null,
+    "lang": "JavaScript"
+  },
+  {
+    "name": "nestjs-school-management",
+    "desc": null,
+    "lang": "TypeScript"
+  },
+  {
+    "name": "nestjs-task-management",
+    "desc": null,
+    "lang": "TypeScript"
+  },
+  {
+    "name": "mac-initial-setup",
+    "desc": null,
+    "lang": "Shell"
+  }
+]
