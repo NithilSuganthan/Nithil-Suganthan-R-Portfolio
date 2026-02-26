@@ -150,7 +150,7 @@ export const startupData = {
 export const contactData = {
     message: "Currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open.",
     email: "nithilsuganthan@gmail.com",
-    linkedin: "https://linkedin.com/in/nithil",
+    linkedin: "https://www.linkedin.com/in/nithil-suganthan-r-63b070329/",
     github: "https://github.com/NithilSuganthan",
     location: "Open for Relocation / Remote"
 };

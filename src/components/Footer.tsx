@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import { contactData, heroData } from "@/data/portfolio";
 
 export default function Footer() {
     return (
@@ -6,12 +7,12 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
                 <div className="mb-4 md:mb-0">
                     <p className="text-sm text-muted-foreground">
-                        &copy; {new Date().getFullYear()} Nithil. All rights reserved.
+                        &copy; {new Date().getFullYear()} {heroData.name.split(' ')[0]}. All rights reserved.
                     </p>
                 </div>
                 <div className="flex space-x-6">
                     <a
-                        href="https://github.com/Nithil"
+                        href={contactData.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-foreground transition-colors"
@@ -20,7 +21,7 @@ export default function Footer() {
                         <Github size={20} />
                     </a>
                     <a
-                        href="https://linkedin.com/in/nithil"
+                        href={contactData.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-muted-foreground hover:text-foreground transition-colors"
@@ -29,7 +30,7 @@ export default function Footer() {
                         <Linkedin size={20} />
                     </a>
                     <a
-                        href="mailto:contact@example.com"
+                        href={`mailto:${contactData.email}`}
                         className="text-muted-foreground hover:text-foreground transition-colors"
                         aria-label="Email"
                     >
