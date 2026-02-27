@@ -17,17 +17,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nithil Suganthan | Software Engineer & Founder",
-  description: "Portfolio of Nithil Suganthan R, a B.Tech IT undergraduate specializing in full-stack web development, robotics, and embedded systems (Arduino, ESP32). Founder of Inventobots Academy.",
-  keywords: ["Nithil Suganthan R", "Software Engineer", "Full Stack Developer", "Robotics", "Arduino", "React", "Next.js", "Portfolio", "Inventobots Academy"],
+  title: "Nithil Suganthan | Full Stack & Robotics Developer",
+  description: "Portfolio of Nithil Suganthan R, a Software Developer specializing in full-stack web applications, scalable APIs, and embedded robotics systems.",
+  keywords: ["Nithil Suganthan R", "Software Engineer", "Full Stack Developer", "Robotics", "Arduino", "React", "Next.js", "Portfolio"],
   authors: [{ name: "Nithil Suganthan R" }],
   creator: "Nithil Suganthan R",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://nithilsuganthanrportfolio.vercel.app/",
-    title: "Nithil Suganthan | Software Engineer & Founder",
-    description: "Discover the projects, skills, and startup ventures of Nithil Suganthan R.",
+    title: "Nithil Suganthan | Full Stack & Robotics Developer",
+    description: "Discover the projects, technical impact, and skills of Nithil Suganthan R.",
     siteName: "Nithil Portfolio",
     images: [
       {
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nithil Suganthan | Software Engineer & Founder",
-    description: "Discover the projects, skills, and startup ventures of Nithil Suganthan R.",
+    title: "Nithil Suganthan | Full Stack & Robotics Developer",
+    description: "Discover the projects, technical impact, and skills of Nithil Suganthan R.",
     creator: "@NithilSuganthan",
     images: ["/og-image.jpg"],
   },

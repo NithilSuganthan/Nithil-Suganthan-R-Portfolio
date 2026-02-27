@@ -10,9 +10,9 @@ export default function Skills() {
         <SectionWrapper id="skills">
             <FadeIn direction="up" className="text-center mb-16">
                 <h2 className="text-sm font-bold tracking-widest uppercase text-primary mb-3">Technical Ecosystem</h2>
-                <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6">Technical Arsenal</h3>
+                <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-6">Tech Stack I Work With</h3>
                 <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light leading-relaxed">
-                    A comprehensive toolkit spanning high-level web frameworks down to low-level microcontroller programming.
+                    A comprehensive toolkit spanning high-level frontend frameworks, scalable backends, and low-level robotics programming.
                 </p>
             </FadeIn>
 

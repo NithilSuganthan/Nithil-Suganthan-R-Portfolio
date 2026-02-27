@@ -40,6 +40,8 @@ export default function Projects() {
                                     <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
                                         <p><strong className="text-foreground">Problem:</strong> {project.problem}</p>
                                         <p><strong className="text-foreground">Solution:</strong> {project.solution}</p>
+                                        <p><strong className="text-foreground">My Role:</strong> {project.role}</p>
+                                        <p className="text-primary font-medium">{project.result}</p>
                                     </div>
                                 </div>
 
