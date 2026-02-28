@@ -24,7 +24,7 @@ export const aboutData = {
 export const impactData = [
     { label: "Engineering Projects", value: "15+" },
     { label: "Tech Domains", value: "Web, API, Robotics" },
-    { label: "Patents Published", value: "1" },
+    { label: "Patents Published", value: "2" },
     { label: "Students Mentored", value: "100+" }
 ];
 
@@ -72,6 +72,12 @@ export const achievements = [
         award: "Patent Published",
         iconName: "FileBadge2",
         description: "Designed and published a patent (App No. 202541090585 A) for an AI-based digital watch to assist women aged 45-55 in post-menstrual health monitoring, integrating AI-driven health tracking and smart alert systems.",
+    },
+    {
+        title: "Quantum AI Nanomaterial Discovery",
+        award: "Patent Published",
+        iconName: "FileBadge2",
+        description: "Co-invented a system of quantum-inspired AI-based nanomaterial discovery for healthcare applications (App No. 202641016448 A). The system predicts key properties including toxicity, drug delivery rate, stability, and bio-compatibility using QAOA, VQE-inspired simulation, and LoRA-enhanced regression models.",
     },
     {
         title: "Academic Excellence Scholarship",
