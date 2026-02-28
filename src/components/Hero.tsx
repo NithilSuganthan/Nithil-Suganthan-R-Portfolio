@@ -22,7 +22,7 @@ export default function Hero() {
                 </StaggerItem>
 
                 <StaggerItem>
-                    <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tighter mb-6 leading-tight">
+                    <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tighter mb-4 md:mb-6 leading-tight">
                         Hi, I'm <br className="sm:hidden" />
                         <span className="text-transparent bg-clip-text bg-gradient-to-br from-foreground to-foreground/50">
                             {heroData.name.split(" ")[0]}
@@ -31,13 +31,13 @@ export default function Hero() {
                 </StaggerItem>
 
                 <StaggerItem>
-                    <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+                    <p className="text-lg md:text-2xl text-muted-foreground mb-8 md:mb-12 max-w-3xl mx-auto leading-relaxed font-light">
                         {heroData.description}
                     </p>
                 </StaggerItem>
 
                 <StaggerItem>
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
                         <a
                             href="#projects"
                             className="group relative inline-flex items-center justify-center w-full sm:w-auto overflow-hidden rounded-full p-4 px-8 font-medium bg-primary text-primary-foreground shadow-lg transition-transform hover:scale-105 active:scale-95"

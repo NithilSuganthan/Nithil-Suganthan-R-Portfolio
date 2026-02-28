@@ -11,7 +11,7 @@ interface SectionWrapperProps {
 
 export default function SectionWrapper({ id, children, className = "" }: SectionWrapperProps) {
     return (
-        <section id={id} className={`py-20 md:py-32 ${className}`}>
+        <section id={id} className={`py-14 md:py-32 ${className}`}>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

@@ -15,7 +15,7 @@ export const heroData = {
 export const aboutData = {
     title: "Engineering Solutions, End-to-End",
     paragraphs: [
-        "I am a developer focused on shipping high-performance software and robust physical systems. As a B.Tech IT undergraduate (CGPA 9.79/10), my foundation lies in writing clean, scalable code that solves real-world problems.",
+        "I am a developer focused on shipping high-performance software and robust physical systems. As a B.Tech IT undergraduate (CGPA 9.74/10), my foundation lies in writing clean, scalable code that solves real-world problems.",
         "My technical expertise spans across the entire stack—from developing responsive React and Next.js frontends to architecting secure Node.js APIs, down to programming microcontrollers like Arduino and ESP32 using C/C++.",
         "I pride myself on my ability to quickly adapt to new technologies and deliver production-ready solutions. Whether it's building a complex SaaS dashboard or integrating AI into embedded devices (resulting in a published patent), my goal is always to build things that work seamlessly at scale."
     ]
@@ -137,17 +137,17 @@ export const projects = [
         border: "group-hover:border-emerald-500/50"
     },
     {
-        title: "NetJS Backend Service",
-        tagline: "Scalable Administrative API",
-        problem: "Schools manage complex data (students, staff, logic) using legacy systems that lack type safety and API accessibility.",
-        role: "Backend Architect. Designed the data schema and implemented robust RESTful endpoints.",
-        solution: "Architected a scalable, strongly-typed backend service utilizing NestJS to centralize and secure school operations.",
-        result: "Provided a centralized data management system enabling microservice-ready architecture.",
-        tech: ["NestJS", "TypeScript", "PostgreSQL", "REST APIs"],
-        github: "https://github.com/Nithil/nestjs-school-management",
-        demo: "#",
-        color: "from-blue-500/10 to-blue-900/10",
-        border: "group-hover:border-blue-500/50"
+        title: "Legally.ai",
+        tagline: "AI-Powered Legal Document Decoder",
+        problem: "Legal documents are dense, jargon-heavy, and inaccessible to the average person, creating barriers to understanding contracts, agreements, and policies.",
+        role: "Full-Stack Developer. Built the AI integration pipeline and the frontend interface.",
+        solution: "Developed LegalDecoder — a web application that uses AI to simplify and decode complex legal documents into plain, human-readable language in seconds.",
+        result: "Empowered users to understand legal content without a lawyer, reducing comprehension time and increasing accessibility to legal literacy.",
+        tech: ["JavaScript", "HTML", "CSS", "AI/LLM APIs"],
+        github: "https://github.com/NithilSuganthan/Legally.ai",
+        demo: "https://legally-ai-tau.vercel.app",
+        color: "from-cyan-500/10 to-cyan-900/10",
+        border: "group-hover:border-cyan-500/50"
     },
     {
         title: "AI-Integrated Watch Embedded System",
