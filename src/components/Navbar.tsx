@@ -38,7 +38,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-16">
                     <div className="flex-shrink-0 flex items-center">
                         <a href="#" className="text-xl font-bold tracking-tighter">
-                            Nithil<span className="text-muted-foreground">Suganthan R</span>
+                            Nithil<span className="text-muted-foreground"> Suganthan R</span>
                         </a>
                     </div>
 
