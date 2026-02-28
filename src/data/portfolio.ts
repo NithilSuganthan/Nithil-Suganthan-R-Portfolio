@@ -81,6 +81,28 @@ export const achievements = [
     }
 ];
 
+export const startupData = {
+    name: "Otomatiks",
+    role: "Web Developer & Curriculum Designer",
+    suffix: "Inventobots Academy",
+    mission: "Designing and developing digital experiences and structured coding curricula for the next generation of engineers at Otomatiks - Inventobots Academy, Chennai.",
+    details: "From building the academy's web presence to crafting hands-on study materials in C, Python, and Java — I bridge technical communication and mentorship to make complex concepts accessible and engaging for 100+ students.",
+    roadmap: [
+        {
+            title: "Innovation Lab",
+            desc: "Building interactive web platforms and tools that enhance the learning experience for students exploring robotics and coding.",
+        },
+        {
+            title: "Tech Stack Mastery",
+            desc: "Leveraging React, Next.js, and modern web technologies to create production-grade educational tools and academy infrastructure.",
+        },
+        {
+            title: "Community Impact",
+            desc: "Mentoring 100+ students through structured curriculum design, hands-on workshops, and one-on-one coding sessions.",
+        },
+    ],
+};
+
 export const projects = [
     {
         title: "E-Cuisine Platform",
