@@ -161,6 +161,32 @@ export const projects = [
         demo: "#",
         color: "from-purple-500/10 to-purple-900/10",
         border: "group-hover:border-purple-500/50"
+    },
+    {
+        title: "MVPrep",
+        tagline: "CA Exam Revision Planner & Tracker",
+        problem: "CA aspirants face a critical 1.5-day gap between exams with no structured tool to prioritize high-value chapters and track marks coverage efficiently.",
+        role: "Solo Full-Stack Developer. Designed and built the entire platform end-to-end — from the React frontend to the Express API and SQLite database.",
+        solution: "Built a marks-coverage-first revision planner using ABC analysis prioritization — featuring a real-time dashboard with Chart.js visualizations, a smart 1.5-day planner engine with PDF export, an embedded Pomodoro focus timer, and secure multi-user JWT authentication.",
+        result: "Delivered a production-ready tool deployed on Vercel that transforms chaotic pre-exam cramming into a data-driven, prioritized revision strategy.",
+        tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "SQLite", "Chart.js", "JWT"],
+        github: "https://github.com/NithilSuganthan/MVPrep",
+        demo: "https://mv-prep.vercel.app",
+        color: "from-blue-500/10 to-indigo-900/10",
+        border: "group-hover:border-blue-500/50"
+    },
+    {
+        title: "SHPA",
+        tagline: "Structured Hallucination Pathway Analyzer",
+        problem: "AI language models frequently produce confident but fabricated outputs (hallucinations), and there's no accessible tool to systematically detect, trace, and visualize where these hallucination pathways originate.",
+        role: "Full-Stack Developer. Architected the analysis pipeline and built the interactive visualization frontend.",
+        solution: "Developed a web-based analyzer that deconstructs AI-generated text, identifies structured hallucination patterns, maps their logical pathways, and presents findings through an intuitive visual interface for researchers and developers.",
+        result: "Built a practical tool for AI safety research — enabling users to trace hallucination propagation and improve prompt engineering strategies.",
+        tech: ["JavaScript", "Vite", "CSS", "HTML"],
+        github: "https://github.com/NithilSuganthan/SHPA",
+        demo: "#",
+        color: "from-rose-500/10 to-pink-900/10",
+        border: "group-hover:border-rose-500/50"
     }
 ];
 
