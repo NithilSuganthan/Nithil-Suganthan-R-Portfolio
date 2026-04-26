@@ -8,7 +8,7 @@ export const siteMetadata = {
 
 export const heroData = {
     name: "Nithil Suganthan R",
-    roles: ["Software Engineer", "Full Stack Developer", "Robotics Engineer"],
+    roles: ["Software Engineer", "Full Stack Developer"],
     description: "I build scalable full-stack web applications and robust embedded systems. Passionate about solving complex problems by bridging modern cloud architectures with hardware-level logic.",
 };
 
@@ -24,8 +24,8 @@ export const aboutData = {
 export const impactData = [
     { label: "Engineering Projects", value: "15+" },
     { label: "Tech Domains", value: "Web, API, Robotics" },
-    { label: "Patents Published", value: "2" },
-    { label: "Students Mentored", value: "100+" }
+    { label: "Patents Published", value: "3" },
+    { label: "Papers Published", value: "1" }
 ];
 
 export const skillCategories = [
@@ -111,6 +111,59 @@ export const startupData = {
 
 export const projects = [
     {
+        title: "EHR - Electronic Health Records",
+        tagline: "AI-Powered Medical Record Management System",
+        problem: "Healthcare providers struggle with fragmented patient data and lack of automated insights, leading to slower diagnosis and administrative overhead.",
+        role: "Full-Stack Developer. Engineered the Spring Boot backend, React frontend, and integrated AI-driven health analytics.",
+        solution: "Developed a comprehensive EHR system featuring AI-powered patient diagnostics, secure Spring Security/JWT authentication, and integrated Razorpay for healthcare payments.",
+        result: "Successfully deployed a production-ready healthcare platform that unifies patient history, appointments, and diagnostic tools.",
+        tech: ["React", "Spring Boot", "Supabase", "PostgreSQL", "Tailwind CSS", "Razorpay", "Docker"],
+        github: "https://github.com/NithilSuganthan/Electronic-health-records",
+        demo: "https://electronic-health-records-xi.vercel.app/",
+        color: "from-teal-500/10 to-emerald-900/10",
+        border: "group-hover:border-teal-500/50"
+    },
+    {
+        title: "MVPrep",
+        tagline: "CA Exam Revision Planner & Tracker",
+        problem: "CA aspirants face a critical 1.5-day gap between exams with no structured tool to prioritize high-value chapters and track marks coverage efficiently.",
+        role: "Solo Full-Stack Developer. Designed and built the entire platform end-to-end — from the React frontend to the Express API and SQLite database.",
+        solution: "Built a marks-coverage-first revision planner using ABC analysis prioritization — featuring a real-time dashboard with Chart.js visualizations, a smart 1.5-day planner engine with PDF export, an embedded Pomodoro focus timer, and secure multi-user JWT authentication.",
+        result: "Delivered a production-ready tool deployed on Vercel that transforms chaotic pre-exam cramming into a data-driven, prioritized revision strategy.",
+        tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "SQLite", "Chart.js", "JWT"],
+        github: "https://github.com/NithilSuganthan/MVPrep",
+        demo: "https://mv-prep.vercel.app",
+        color: "from-blue-500/10 to-indigo-900/10",
+        border: "group-hover:border-blue-500/50"
+    },
+
+    {
+        title: "SHPA",
+        tagline: "Structured Hallucination Pathway Analyzer",
+        problem: "AI language models frequently produce confident but fabricated outputs (hallucinations), and there's no accessible tool to systematically detect, trace, and visualize where these hallucination pathways originate.",
+        role: "Full-Stack Developer. Architected the analysis pipeline and built the interactive visualization frontend.",
+        solution: "Developed a web-based analyzer that deconstructs AI-generated text, identifies structured hallucination patterns, maps their logical pathways, and presents findings through an intuitive visual interface for researchers and developers.",
+        result: "Built a practical tool for AI safety research — enabling users to trace hallucination propagation and improve prompt engineering strategies.",
+        tech: ["JavaScript", "Vite", "CSS", "HTML"],
+        github: "https://github.com/NithilSuganthan/SHPA",
+        demo: "https://shpa-nine.vercel.app/",
+        color: "from-rose-500/10 to-pink-900/10",
+        border: "group-hover:border-rose-500/50"
+    },
+    {
+        title: "Legally.ai",
+        tagline: "AI-Powered Legal Document Decoder",
+        problem: "Legal documents are dense, jargon-heavy, and inaccessible to the average person, creating barriers to understanding contracts, agreements, and policies.",
+        role: "Full-Stack Developer. Built the AI integration pipeline and the frontend interface.",
+        solution: "Developed LegalDecoder — a web application that uses AI to simplify and decode complex legal documents into plain, human-readable language in seconds.",
+        result: "Empowered users to understand legal content without a lawyer, reducing comprehension time and increasing accessibility to legal literacy.",
+        tech: ["JavaScript", "HTML", "CSS", "AI/LLM APIs"],
+        github: "https://github.com/NithilSuganthan/Legally.ai",
+        demo: "https://legally-ai-tau.vercel.app",
+        color: "from-cyan-500/10 to-cyan-900/10",
+        border: "group-hover:border-cyan-500/50"
+    },
+    {
         title: "E-Cuisine Platform",
         tagline: "Full-Stack Meal Subscription System",
         problem: "PG and college students struggle to discover and manage daily catering services efficiently through traditional manual tracking.",
@@ -132,22 +185,9 @@ export const projects = [
         result: "Ensured high-grade data confidentiality and integrity validation within a seamless UX.",
         tech: ["React", "AES-GCM Crypto", "Steganography", "JWT"],
         github: "https://github.com/NithilSuganthan/Secure-77",
-        demo: "#",
+        demo: "https://secure-77.vercel.app/",
         color: "from-emerald-500/10 to-emerald-900/10",
         border: "group-hover:border-emerald-500/50"
-    },
-    {
-        title: "Legally.ai",
-        tagline: "AI-Powered Legal Document Decoder",
-        problem: "Legal documents are dense, jargon-heavy, and inaccessible to the average person, creating barriers to understanding contracts, agreements, and policies.",
-        role: "Full-Stack Developer. Built the AI integration pipeline and the frontend interface.",
-        solution: "Developed LegalDecoder — a web application that uses AI to simplify and decode complex legal documents into plain, human-readable language in seconds.",
-        result: "Empowered users to understand legal content without a lawyer, reducing comprehension time and increasing accessibility to legal literacy.",
-        tech: ["JavaScript", "HTML", "CSS", "AI/LLM APIs"],
-        github: "https://github.com/NithilSuganthan/Legally.ai",
-        demo: "https://legally-ai-tau.vercel.app",
-        color: "from-cyan-500/10 to-cyan-900/10",
-        border: "group-hover:border-cyan-500/50"
     },
     {
         title: "AI-Integrated Watch Embedded System",
@@ -157,37 +197,12 @@ export const projects = [
         solution: "Developed the embedded logic and hardware integration for an AI-based digital watch that processes health tracking data directly at the edge.",
         result: "Successfully published a patent (App No. 202541090585 A) proving the feasibility of edge-calculated health alerts.",
         tech: ["C/C++", "Microcontrollers", "I2C/SPI", "Sensors"],
-        github: "https://github.com/Nithil",
+        github: "https://github.com/NithilSuganthan/",
         demo: "#",
         color: "from-purple-500/10 to-purple-900/10",
         border: "group-hover:border-purple-500/50"
-    },
-    {
-        title: "MVPrep",
-        tagline: "CA Exam Revision Planner & Tracker",
-        problem: "CA aspirants face a critical 1.5-day gap between exams with no structured tool to prioritize high-value chapters and track marks coverage efficiently.",
-        role: "Solo Full-Stack Developer. Designed and built the entire platform end-to-end — from the React frontend to the Express API and SQLite database.",
-        solution: "Built a marks-coverage-first revision planner using ABC analysis prioritization — featuring a real-time dashboard with Chart.js visualizations, a smart 1.5-day planner engine with PDF export, an embedded Pomodoro focus timer, and secure multi-user JWT authentication.",
-        result: "Delivered a production-ready tool deployed on Vercel that transforms chaotic pre-exam cramming into a data-driven, prioritized revision strategy.",
-        tech: ["React", "Vite", "Tailwind CSS", "Node.js", "Express", "SQLite", "Chart.js", "JWT"],
-        github: "https://github.com/NithilSuganthan/MVPrep",
-        demo: "https://mv-prep.vercel.app",
-        color: "from-blue-500/10 to-indigo-900/10",
-        border: "group-hover:border-blue-500/50"
-    },
-    {
-        title: "SHPA",
-        tagline: "Structured Hallucination Pathway Analyzer",
-        problem: "AI language models frequently produce confident but fabricated outputs (hallucinations), and there's no accessible tool to systematically detect, trace, and visualize where these hallucination pathways originate.",
-        role: "Full-Stack Developer. Architected the analysis pipeline and built the interactive visualization frontend.",
-        solution: "Developed a web-based analyzer that deconstructs AI-generated text, identifies structured hallucination patterns, maps their logical pathways, and presents findings through an intuitive visual interface for researchers and developers.",
-        result: "Built a practical tool for AI safety research — enabling users to trace hallucination propagation and improve prompt engineering strategies.",
-        tech: ["JavaScript", "Vite", "CSS", "HTML"],
-        github: "https://github.com/NithilSuganthan/SHPA",
-        demo: "#",
-        color: "from-rose-500/10 to-pink-900/10",
-        border: "group-hover:border-rose-500/50"
     }
+    
 ];
 
 export const contactData = {
