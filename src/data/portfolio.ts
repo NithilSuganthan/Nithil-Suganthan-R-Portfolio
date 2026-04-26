@@ -58,6 +58,13 @@ export const skillCategories = [
 
 export const experiences = [
     {
+        title: "Software Engineering Intern",
+        company: "Nexwave Systems, Chennai",
+        date: "Apr 2026 - May 2026",
+        iconName: "Briefcase",
+        description: "Selected for an on-site internship program to contribute to real-world engineering projects. Focused on enhancing technical skills and gaining valuable industry experience in a professional development environment.",
+    },
+    {
         title: "Web Developer and Coding Curriculam Designer",
         company: "Otomatiks - Inventobots Academy, Chennai",
         date: "Dec 2024 - Present",
