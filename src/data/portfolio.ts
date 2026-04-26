@@ -87,6 +87,12 @@ export const achievements = [
         description: "Co-invented a system of quantum-inspired AI-based nanomaterial discovery for healthcare applications (App No. 202641016448 A). The system predicts key properties including toxicity, drug delivery rate, stability, and bio-compatibility using QAOA, VQE-inspired simulation, and LoRA-enhanced regression models.",
     },
     {
+        title: "Structural Hallucination Pathway Analyzer",
+        award: "Patent Published",
+        iconName: "FileBadge2",
+        description: "Co-invented an AI-driven system (App No. 202641016733 A) that prevents GenAI hallucinations by monitoring internal model states and processing layers in real-time, intervening before misinformation reaches the user.",
+    },
+    {
         title: "Academic Excellence Scholarship",
         award: "9.74/10 CGPA",
         iconName: "Award",
